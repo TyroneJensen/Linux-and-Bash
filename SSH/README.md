@@ -2,11 +2,18 @@
 
 launch aws cloud9
 
+create a .ssh folder:
+
+- mkdir home/ec2user/.ssh
+- cd home/ec2user/.ssh
+
 create key:
 
-- ssh-keygen -t -rsa
+- ssh-keygen -t rsa
 
-copy public key
+copy public key:
+
+- /home/username/.ssh/id_rsa.pub
 
 github profile / settings / SSH and GPG keys / new SSH key / paste copied public key
 
@@ -25,7 +32,7 @@ get public IP of instance, add to variable
 
 go to .ssh directory and copy public key OR create a key and copy public key:
 
-- ssh-keygen -t -rsa
+- ssh-keygen -t rsa
 
 in aws cloud9 paste key to ~/.ssh/authorized_keys:
 
